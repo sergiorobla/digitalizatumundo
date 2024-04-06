@@ -15,28 +15,43 @@
   </head>
   <body>
     <header>
-      <div id="logo">
-        <a href="./index.html"><img src="./src/img/logoPage.png" alt="" /></a>
+      <div id="logo-and-btn">
+        <div id="logo">
+          <a href="./index.html"><img src="./src/img/logoPage.png" alt="" /></a>
+        </div>
+        <div class="bars_menu">
+          <span class="line1_bars-menu"></span>
+          <span class="line2_bars-menu"></span>
+          <span class="line3_bars-menu"></span>
+        </div>
+      </div>
+      <div class="menu-resp">
+        <a href="./sobreNosotros.html"><div>Sobre nosotros</div></a>
+        <a href="./servicios.html"><div>Servicios</div></a>
+        <a href="./portafolio.html"><div>Portafolio</div></a>
+        <a href="./soluciones.html"><div>Soluciones</div></a>
+        <a href="./recursos.html"><div>Recursos</div></a>
+        <a href="./contacto.html"><div>Contacto</div></a>
       </div>
       <nav id="menu">
-        <a href=""><div>Sobre nosotros</div></a>
-        <a href=""><div>Servicios</div></a>
-        <a href=""><div>Portafolio</div></a>
-        <a href=""><div>Soluciones</div></a>
-        <a href=""><div>Recursos</div></a>
-        <a href=""><div>Contacto</div></a>
+        <a href="./sobreNosotros.html"><div>Sobre nosotros</div></a>
+        <a href="./servicios.html"><div>Servicios</div></a>
+        <a href="./portafolio.html"><div>Portafolio</div></a>
+        <a href="./soluciones.html"><div>Soluciones</div></a>
+        <a href="./recursos.html"><div>Recursos</div></a>
+        <a href="./contacto.html"><div>Contacto</div></a>
       </nav>
     </header>
     <main>
       <div id="heading-title">
-        <div class="texto-title">
+        <div id="texto-title">
           Tenemos lo necesario<br />
           ¿estas listo?
         </div>
       </div>
       <div id="first-introduction">
-        <img src="./src/img/1.jpg" alt="" class="element-hidden" />
-        <div class="element-hidden">
+        <img src="./src/img/1.jpg" alt="" id="img-intro" />
+        <div id="div-intro">
           <h1>Explora nuestros servicios</h1>
           <p>
             En Digitaliza Tu Mundo, nos dedicamos a forjar el futuro digital de
@@ -71,11 +86,11 @@
         <div id="servicio-2">
           <h2>Consultoría Web</h2>
           <p>
-            Nuestro servicio de consultoría web en Digitaliza tu Mundo brinda
-            análisis profundos y estrategias personalizadas para maximizar tu
-            presencia en línea. Nos dedicamos a identificar oportunidades de
-            crecimiento y optimizar el rendimiento de tu sitio web, asegurando
-            que tu negocio se destaque en el mundo digital.
+            Nuestro servicio de consultoría web brinda análisis profundos y
+            estrategias personalizadas para maximizar tu presencia en línea. Nos
+            dedicamos a identificar oportunidades de crecimiento y optimizar el
+            rendimiento de tu sitio web, asegurando que tu negocio se destaque
+            en el mundo digital.
           </p>
           <button>Saber más...</button>
         </div>
@@ -119,6 +134,7 @@
         <div><a href="#">Política de privacidad</a></div>
       </div>
     </footer>
+    <script src="./src/js/botonMenuResp.js"></script>
     <script src="./src/js/main.js"></script>
   </body>
 </html>
