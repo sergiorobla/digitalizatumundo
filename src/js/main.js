@@ -29,6 +29,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 else if (target.closest("#sn-conecta")) {
                     target.classList.add("slide-in-bottom");
                 }
+                else if (target.closest("#contacta")) {
+                    target.classList.add("slide-in-bottom");
+                }
                 observer.unobserve(target);
             }
         });
@@ -62,7 +65,10 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll("#sn-valores > div p").forEach((el) => {
         observer.observe(el);
     });
-    document.querySelectorAll("#sn-valores > div h3").forEach((el) => {
+    document.querySelectorAll("#valores > div h3").forEach((el) => {
+        observer.observe(el);
+    });
+    document.querySelectorAll("#valores > div p").forEach((el) => {
         observer.observe(el);
     });
     // Observa todos los elementos dentro de #sn-equipo
@@ -84,6 +90,16 @@ document.addEventListener("DOMContentLoaded", () => {
         observer.observe(el);
     });
     document.querySelectorAll("#sn-conecta > div").forEach((el) => {
+        observer.observe(el);
+    });
+    // Observa todos los elementos dentro de #contacta
+    document.querySelectorAll("#contacta > h1").forEach((el) => {
+        observer.observe(el);
+    });
+    document.querySelectorAll("#contacta > div").forEach((el) => {
+        observer.observe(el);
+    });
+    document.querySelectorAll("#contacta > form").forEach((el) => {
         observer.observe(el);
     });
 });

@@ -6,7 +6,7 @@
   --segundo: #2e3062;
   --tercero: #e7e8f3;
   --rosa: #c5145e;
-  --rosa-hover: #c72568;
+  --rosa-hover: #c92f6f;
 }
 
 /* ESTILOS GLOBALES DE EL DOCUMENTO */
@@ -172,7 +172,7 @@ main {
   position: relative;
   width: 100%;
   min-height: 750px;
-  height: 90vh;
+  height: 92vh;
   display: flex;
   text-align: center;
   overflow: hidden;
@@ -194,6 +194,7 @@ main {
   font-weight: 200;
   margin: 0 20vw;
   padding: 20px;
+  text-align: justify;
 }
 
 #texto-title button {
@@ -256,7 +257,7 @@ main {
 
 #servicios button {
   padding: 15px 20px;
-  background-color: var(--primero);
+  background-color: var(--rosa);
   border: none;
   border-radius: 100px;
   font-weight: 600;
@@ -268,7 +269,7 @@ main {
 }
 
 #servicios button:hover {
-  background-color: var(--primero-hover);
+  background-color: var(--rosa-hover);
   transform: scale(1.1);
 }
 
@@ -304,6 +305,7 @@ main {
   justify-content: space-around;
   text-align: justify;
   padding: 110px;
+  color: var(--primero);
 }
 
 #sn-intro img {
@@ -362,6 +364,7 @@ main {
   justify-content: space-around;
   margin: 110px;
   text-align: justify;
+  color: var(--primero);
 }
 
 #sn-equipo img {
@@ -408,6 +411,7 @@ main {
   margin: 0 auto;
   width: 63vw;
   padding: 110px;
+  color: var(--primero);
 }
 
 #sn-conecta div {
@@ -435,6 +439,7 @@ main {
 /* ESTILOS PARA LA PAGINA DE CONTACTO */
 #contacta {
   padding: 20px;
+  text-align: justify;
 }
 
 #contacta h1 {
@@ -447,6 +452,7 @@ main {
   width: 50vw;
   min-width: 250px;
   margin: 0 auto;
+  opacity: 0;
 }
 
 #contacta form #nombre,
@@ -494,6 +500,15 @@ main {
 #contacta form button:hover {
   background-color: var(--primero-hover);
   transform: scale(1.1);
+}
+
+/* ESTILOS PARA LA PAGINA DE SERVICIOS */
+#Paginaservicios {
+  padding: 20px;
+}
+
+#Paginaservicios h1 {
+  margin: 0;
 }
 
 /* ESTILOS PARA EL PIE DE PAGINA */
@@ -603,7 +618,7 @@ footer div {
   }
   .menu-resp {
     width: auto;
-    height: 70vh;
+    height: 91vh;
     overflow: auto;
     z-index: 30;
   }
@@ -612,6 +627,9 @@ footer div {
   }
   #heading-title {
     height: 100vh;
+  }
+  #texto-title p {
+    margin: 0 10vw;
   }
   #first-introduction {
     flex-direction: column-reverse;
