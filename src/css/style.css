@@ -432,6 +432,70 @@ main {
   transform: scale(1.1);
 }
 
+/* ESTILOS PARA LA PAGINA DE CONTACTO */
+#contacta {
+  padding: 20px;
+}
+
+#contacta h1 {
+  margin: 0;
+}
+
+#contacta form {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  min-width: 250px;
+  margin: 0 auto;
+}
+
+#contacta form #nombre,
+#contacta form #gmail,
+#contacta form #asunto,
+#contacta form textarea {
+  border: solid 1.5px #d2d4ed;
+  border-radius: 5px;
+  padding: 7px;
+  outline: none;
+}
+
+#contacta form #flab {
+  color: var(--primero);
+  font-size: 17px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+#contacta form #check-leido-priv {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+#contacta form #checkpriv {
+  transform: scale(1.3);
+  margin-right: 10px;
+}
+
+#contacta form button {
+  padding: 15px 20px;
+  background-color: var(--primero);
+  border: none;
+  border-radius: 100px;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+  width: 150px;
+  margin-top: 20px;
+  transition: transform 0.15s ease;
+}
+
+#contacta form button:hover {
+  background-color: var(--primero-hover);
+  transform: scale(1.1);
+}
+
 /* ESTILOS PARA EL PIE DE PAGINA */
 footer {
   background-color: var(--primero);

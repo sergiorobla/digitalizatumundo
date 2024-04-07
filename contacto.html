@@ -32,7 +32,6 @@
       <div class="menu-resp">
         <a href="./sobreNosotros.html"><div>Sobre nosotros</div></a>
         <a href="./servicios.html"><div>Servicios</div></a>
-        <a href="./portafolio.html"><div>Portafolio</div></a>
         <a href="./soluciones.html"><div>Soluciones</div></a>
         <a href="./recursos.html"><div>Recursos</div></a>
         <a href="./contacto.html"><div>Contacto</div></a>
@@ -40,16 +39,58 @@
       <nav id="menu">
         <a href="./sobreNosotros.html"><div>Sobre nosotros</div></a>
         <a href="./servicios.html"><div>Servicios</div></a>
-        <a href="./portafolio.html"><div>Portafolio</div></a>
         <a href="./soluciones.html"><div>Soluciones</div></a>
         <a href="./recursos.html"><div>Recursos</div></a>
         <a href="./contacto.html"><div>Contacto</div></a>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <div id="contacta">
+        <h1>¡Contáctanos!</h1>
+        <div>
+          <p>
+            Tu opinión es valiosa para nosotros y estamos comprometidos a
+            proporcionarte la mejor experiencia posible. Si necesitas soporte
+            técnico, información adicional sobre nuestros productos o servicios,
+            o deseas programar una reunión, no dudes en ponerte en contacto.
+            Nuestro equipo está listo para atenderte y responderá a tu solicitud
+            en un plazo de 24 a 48 horas en días laborables.
+          </p>
+          <p>
+            Nos encantaría escuchar tus ideas y discutir cómo podemos ayudarte a
+            alcanzar tus objetivos. Ya sea que tengas preguntas sobre nuestros
+            servicios, necesites asesoramiento experto o simplemente quieras
+            compartir tus comentarios, estamos aquí para escucharte. Completa el
+            formulario de contacto o llámanos directamente; tu consulta es el
+            primer paso hacia una colaboración exitosa.
+          </p>
+        </div>
+        <form action="#">
+          <label for="nombre" id="flab">Tu nombre (requerido)</label>
+          <input type="text" id="nombre" required />
+          <label for="gmail" id="flab">Tu correo electrónico (requerido)</label>
+          <input type="email" id="gmail" required />
+          <label for="asunto" id="flab">Asunto (requerido)</label>
+          <input type="text" id="asunto" required />
+          <label for="mensaje" id="flab">Tu mensaje</label>
+          <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+          <div id="check-leido-priv">
+            <input type="checkbox" name="check" id="checkpriv" required />
+            <label for="check"
+              >He leído, entiendo y acepto de forma expresa la política de
+              privacidad de datos</label
+            >
+          </div>
+          <input type="file" name="" id="" />
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </main>
     <footer>
       <div id="fondo-img">
-        <img src="./src/img/logoPage.png" alt="" />
+        <a href="./contacto.html"
+          ><img src="./src/img/logoPage.png" alt=""
+        /></a>
       </div>
       <div>
         <div>Digitaliza tu mente ©</div>
