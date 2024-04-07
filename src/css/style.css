@@ -1,5 +1,14 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --primero: #00023b;
+  --primero-hover: #14175d;
+  --segundo: #2e3062;
+  --tercero: #e7e8f3;
+  --rosa: #c5145e;
+  --rosa-hover: #c72568;
+}
+
 /* ESTILOS GLOBALES DE EL DOCUMENTO */
 body {
   margin: 0;
@@ -25,7 +34,7 @@ body {
   display: block;
   width: 100%;
   height: 2px;
-  background: #c5145e;
+  background: var(--rosa);
   margin-top: 10px;
   transform-origin: 0px 100%;
   transition: all 400ms;
@@ -76,18 +85,17 @@ body {
 /* MENÚ RESPONSIVE DEL DOCUMENTO */
 .menu-resp {
   display: none;
-  background-color: #00023b;
+  background-color: var(--primero);
+  padding-top: 20px;
 }
 
 .menu-resp a {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   width: 150px;
-  margin: 0 auto;
   padding: 10px 15vw;
   color: white;
   text-decoration: none;
-  background-color: #1c0330;
   border-radius: 100px;
   margin-bottom: 10px;
   letter-spacing: 2px;
@@ -104,7 +112,7 @@ header {
   align-items: center;
   gap: 50px;
   z-index: 10;
-  background-color: #00023b;
+  background-color: var(--primero);
 }
 
 /* ESTILOS DEL LOGO */
@@ -120,7 +128,7 @@ header {
 }
 
 #logo p {
-  color: #c5145e;
+  color: var(--rosa);
   margin-left: 10px;
   font-size: 20px;
   line-height: 20px;
@@ -142,8 +150,8 @@ header {
 }
 
 #menu div:hover {
-  color: #c72568;
-  box-shadow: 0px 6px 1px -5px #c5145e;
+  color: var(--rosa);
+  box-shadow: 0px 6px 1px -5px var(--rosa);
 }
 
 #menu a {
@@ -155,7 +163,7 @@ header {
 
 /* ESTILOS GLOBALES DEL MAIN */
 main {
-  background-color: #e7e8f3;
+  background-color: var(--tercero);
 }
 
 /* ESTILOS DE LA PAGINA INDEX */
@@ -191,7 +199,7 @@ main {
 #texto-title button {
   padding: 20px 50px;
   border: none;
-  background-color: #c5145e;
+  background-color: var(--rosa);
   color: white;
   letter-spacing: 1px;
   font-size: 20px;
@@ -200,7 +208,7 @@ main {
 }
 
 #texto-title button:hover {
-  background-color: #c72568;
+  background-color: var(--rosa-hover);
 }
 
 /* INTRODUCCION DE LA PAGINA DEL INDEX */
@@ -213,10 +221,12 @@ main {
 }
 
 #first-introduction img {
-  width: 20vh;
+  width: 15vw;
+  min-width: 250px;
   box-shadow: 1px 1px 20px black;
   border-radius: 20px;
   margin-bottom: 20px;
+  margin-left: 20px;
   opacity: 0;
 }
 
@@ -228,7 +238,7 @@ main {
 
 #first-introduction h1 {
   text-align: left;
-  color: #00023b;
+  color: var(--primero);
 }
 
 /* SERVICIOS DE LA PAGINA DEL INDEX */
@@ -236,17 +246,17 @@ main {
   display: flex;
   gap: 50px;
   padding: 30px 50px;
-  background-color: #2e3062;
-  color: #e0e1ff;
+  background-color: var(--segundo);
+  color: var(--tercero);
 }
 
 #servicios h2 {
-  color: #00023b;
+  color: var(--tercero);
 }
 
 #servicios button {
   padding: 15px 20px;
-  background-color: #00023b;
+  background-color: var(--primero);
   border: none;
   border-radius: 100px;
   font-weight: 600;
@@ -258,7 +268,7 @@ main {
 }
 
 #servicios button:hover {
-  background-color: #0b0d46;
+  background-color: var(--primero-hover);
   transform: scale(1.1);
 }
 
@@ -279,7 +289,7 @@ main {
     opacity: 0;
   }
   to {
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
   }
 }
@@ -288,11 +298,12 @@ main {
 }
 
 /* ESTILOS PARA LA PAGINA DE SOBRE NOSOTROS */
+/* ESTILOS PARA LA PAGINA DE SOBRE NOSOTROS PARTE INTRODUCTORIA */
 #sn-intro {
   display: flex;
   justify-content: space-around;
   text-align: justify;
-  margin: 110px;
+  padding: 110px;
 }
 
 #sn-intro img {
@@ -300,14 +311,23 @@ main {
   height: 250px;
   border-radius: 10px;
   margin-right: 50px;
+  margin-top: 50px;
   box-shadow: 1px 1px 20px black;
+  opacity: 0;
 }
 
+#sn-intro div {
+  opacity: 0;
+}
+
+/* ESTILOS PARA LA PAGINA DE SOBRE NOSOTROS PARTE DE VALORES */
 #sn-valores {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
-  margin: 0 100px;
+  padding: 110px;
+  background-color: var(--segundo);
+  color: var(--tercero);
 }
 
 #sn-valores img {
@@ -316,6 +336,14 @@ main {
   border-radius: 10px;
   box-shadow: 1px 1px 20px black;
   margin-left: 50px;
+  opacity: 0;
+}
+
+#sn-valores div h1,
+#sn-valores div p,
+#valores div h3,
+#valores div p {
+  opacity: 0;
 }
 
 #valores {
@@ -328,6 +356,7 @@ main {
   width: 220px;
 }
 
+/* ESTILOS PARA LA PAGINA DE SOBRE NOSOTROS PARTE DEL EQUIPO*/
 #sn-equipo {
   display: flex;
   justify-content: space-around;
@@ -339,15 +368,25 @@ main {
   width: 400px;
   height: 250px;
   margin-right: 50px;
+  margin-top: 50px;
   border-radius: 10px;
   box-shadow: 1px 1px 20px black;
+  opacity: 0;
 }
 
+#sn-equipo div {
+  opacity: 0;
+}
+
+/* ESTILOS PARA LA PAGINA DE SOBRE NOSOTROS PARTE DE LA OFERTA */
 #sn-oferta {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
   text-align: justify;
+  padding: 110px;
+  background-color: var(--segundo);
+  color: var(--tercero);
 }
 
 #sn-oferta img {
@@ -355,18 +394,47 @@ main {
   height: 250px;
   border-radius: 10px;
   box-shadow: 1px 1px 20px black;
+  opacity: 0;
 }
 
+#sn-oferta div {
+  opacity: 0;
+}
+
+/* ESTILOS PARA LA PAGINA DE SOBRE NOSOTROS PARTE DE CONECTA */
 #sn-conecta {
   display: flex;
   text-align: justify;
   margin: 0 auto;
   width: 63vw;
+  padding: 110px;
+}
+
+#sn-conecta div {
+  opacity: 0;
+}
+
+#sn-conecta button {
+  padding: 15px 20px;
+  background-color: var(--primero);
+  border: none;
+  border-radius: 100px;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+  width: 150px;
+  transition: transform 0.15s ease;
+}
+
+#sn-conecta button:hover {
+  background-color: var(--primero-hover);
+  transform: scale(1.1);
 }
 
 /* ESTILOS PARA EL PIE DE PAGINA */
 footer {
-  background-color: #00023b;
+  background-color: var(--primero);
   padding: 20px;
   color: white;
 }
@@ -389,63 +457,66 @@ footer div {
   margin-bottom: 5px;
 }
 
-/* Mobile for Styles */
+/* ESTILOS RESPONSIVOS PARA TABLET */
 @media (width < 1255px) {
   #heading-title #texto-title {
     font-size: 7.9vw;
   }
-  #sn-intro img {
-    width: 550px;
-    height: 350px;
-  }
-  #sn-equipo img {
-    width: 550px;
-    height: 350px;
-  }
-}
-@media (width < 1024px) {
   #servicios {
     display: block;
   }
+}
+@media (width < 1024px) {
   #sn-intro {
     flex-direction: column-reverse;
-    text-align: justify;
-  }
-  #sn-intro img {
-    width: 70vw;
-    height: auto;
-    margin: 50px auto;
+    padding: 20px;
   }
   #sn-valores {
     flex-direction: column-reverse;
+    padding: 20px;
   }
   #valores {
     flex-direction: column;
-    align-items: center;
+    align-items: start;
   }
-  #sn-valores img {
-    width: 70vw;
-    height: auto;
-    margin: 50px auto;
+  #valores div {
+    width: auto;
   }
   #sn-equipo {
     flex-direction: column-reverse;
-  }
-  #sn-equipo img {
-    width: 70vw;
-    height: auto;
-    margin: 50px auto;
+    padding: 20px;
+    margin: 0;
   }
   #sn-oferta {
     flex-direction: column-reverse;
-    align-items: center;
+    padding: 20px;
   }
+  #sn-conecta {
+    margin: 0;
+    padding: 20px;
+    width: auto;
+  }
+  #sn-conecta h1 {
+    text-align: left;
+  }
+  #sn-intro img,
+  #sn-valores img,
+  #sn-equipo img,
   #sn-oferta img {
-    width: 70vw;
-    height: auto;
-    margin: 50px auto;
+    margin: 0 auto;
+  }
+  #sn-intro img,
+  #sn-equipo img,
+  #sn-oferta img {
+    width: 250px;
+    height: 170px;
+  }
+  #sn-valores img,
+  #sn-oferta img {
+    display: none;
   }
 }
+/* ESTILOS RESPONSIVOS PARA MOVIL */
 @media (width < 768px) {
   #logo img {
     width: 50px;
@@ -480,11 +551,11 @@ footer div {
   }
   #first-introduction {
     flex-direction: column-reverse;
-    margin: 0 50px;
+    padding: 0 20px;
     text-align: center;
   }
   #first-introduction img {
-    width: 220px;
+    margin: 50px 0;
   }
   #first-introduction div {
     width: auto;
@@ -492,5 +563,8 @@ footer div {
   #first-introduction h1 {
     text-align: center;
     font-size: 8vw;
+  }
+  #servicios {
+    padding: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
