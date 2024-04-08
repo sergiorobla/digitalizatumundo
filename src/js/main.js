@@ -50,6 +50,42 @@ document.addEventListener("DOMContentLoaded", () => {
                 else if (target.closest("#s-mw")) {
                     target.classList.add("slide-in-left");
                 }
+                else if (target.closest("#s-inicio")) {
+                    target.classList.add("slide-in-left");
+                }
+                else if (target.closest("#s-p")) {
+                    target.classList.add("slide-in-left");
+                }
+                else if (target.closest("#s-op")) {
+                    target.classList.add("slide-in-left");
+                }
+                else if (target.closest("#s-sc")) {
+                    target.classList.add("slide-in-left");
+                }
+                else if (target.closest("#s-eu")) {
+                    target.classList.add("slide-in-left");
+                }
+                else if (target.closest("#s-ai")) {
+                    target.classList.add("slide-in-left");
+                }
+                else if (target.closest("#s-c")) {
+                    target.classList.add("slide-in-left");
+                }
+                else if (target.closest("#r-inicio")) {
+                    target.classList.add("slide-in-left");
+                }
+                else if (target.closest("#r-gt")) {
+                    target.classList.add("slide-in-left");
+                }
+                else if (target.closest("#r-h")) {
+                    target.classList.add("slide-in-left");
+                }
+                else if (target.closest("#r-faq")) {
+                    target.classList.add("slide-in-left");
+                }
+                else if (target.closest("#r-cont")) {
+                    target.classList.add("slide-in-left");
+                }
                 observer.unobserve(target);
             }
         });
@@ -117,6 +153,54 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     // Observa todos los elementos dentro de #s-dw
     document.querySelectorAll("#s-mw > *").forEach((el) => {
+        observer.observe(el);
+    });
+    // Observa todos los elementos dentro de #s-inicio
+    document.querySelectorAll("#s-inicio > *").forEach((el) => {
+        observer.observe(el);
+    });
+    // Observa todos los elementos dentro de #s-p
+    document.querySelectorAll("#s-p > *").forEach((el) => {
+        observer.observe(el);
+    });
+    // Observa todos los elementos dentro de #s-op
+    document.querySelectorAll("#s-op > *").forEach((el) => {
+        observer.observe(el);
+    });
+    // Observa todos los elementos dentro de #s-sc
+    document.querySelectorAll("#s-sc > *").forEach((el) => {
+        observer.observe(el);
+    });
+    // Observa todos los elementos dentro de #s-eu
+    document.querySelectorAll("#s-eu > *").forEach((el) => {
+        observer.observe(el);
+    });
+    // Observa todos los elementos dentro de #s-ai
+    document.querySelectorAll("#s-ai > *").forEach((el) => {
+        observer.observe(el);
+    });
+    // Observa todos los elementos dentro de #s-c
+    document.querySelectorAll("#s-c > *").forEach((el) => {
+        observer.observe(el);
+    });
+    // Observa todos los elementos dentro de #r-inicio
+    document.querySelectorAll("#r-inicio > *").forEach((el) => {
+        observer.observe(el);
+    });
+    // Observa todos los elementos dentro de #r-gt
+    document.querySelectorAll("#r-gt > *").forEach((el) => {
+        observer.observe(el);
+    });
+    // Observa todos los elementos dentro de #r-h
+    document.querySelectorAll("#r-h > *").forEach((el) => {
+        observer.observe(el);
+    });
+    // Observa todos los elementos dentro de #r-faq
+    document.querySelectorAll("#r-faq > *").forEach((el) => {
+        observer.observe(el);
+    });
+    // Observa todos los elementos dentro de #r-cont
+    document.querySelectorAll("#r-cont > *").forEach((el) => {
         observer.observe(el);
     });
 });

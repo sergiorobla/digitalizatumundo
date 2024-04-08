@@ -303,6 +303,7 @@ main {
 #sn-intro {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   text-align: justify;
   padding: 110px;
   color: var(--primero);
@@ -313,7 +314,6 @@ main {
   height: 250px;
   border-radius: 10px;
   margin-right: 50px;
-  margin-top: 50px;
   box-shadow: 1px 1px 20px black;
   opacity: 0;
 }
@@ -327,6 +327,7 @@ main {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
+  align-items: center;
   padding: 110px;
   background-color: var(--segundo);
   color: var(--tercero);
@@ -360,7 +361,8 @@ main {
 #sn-equipo {
   display: flex;
   justify-content: space-around;
-  margin: 110px;
+  align-items: center;
+  padding: 110px;
   text-align: justify;
   color: var(--primero);
 }
@@ -369,7 +371,6 @@ main {
   width: 400px;
   height: 250px;
   margin-right: 50px;
-  margin-top: 50px;
   border-radius: 10px;
   box-shadow: 1px 1px 20px black;
   opacity: 0;
@@ -384,6 +385,7 @@ main {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-evenly;
+  align-items: center;
   text-align: justify;
   padding: 110px;
   background-color: var(--segundo);
@@ -459,6 +461,7 @@ main {
 #s-dw {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   text-align: justify;
   padding: 110px;
   background-color: var(--segundo);
@@ -483,6 +486,7 @@ main {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
+  align-items: center;
   text-align: justify;
   padding: 110px;
   color: var(--primero);
@@ -505,6 +509,7 @@ main {
 #s-pw {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   text-align: justify;
   padding: 110px;
   background-color: var(--segundo);
@@ -529,6 +534,7 @@ main {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
+  align-items: center;
   text-align: justify;
   padding: 110px;
   color: var(--primero);
@@ -544,6 +550,198 @@ main {
 }
 
 #s-mw div {
+  opacity: 0;
+}
+
+/* ESTILOS PARA LA PAGINA DE SOLUCIONES */
+/* ESTILOS PARA LA PAGINA SOLUCIONES APARTADO DE INICIO */
+#s-inicio {
+  text-align: justify;
+  padding: 110px;
+  color: var(--primero);
+}
+
+#s-inicio div {
+  opacity: 0;
+}
+
+/* ESTILOS PARA LA PAGINA SOLUCIONES APARTADO DE SOLUCIONES PERSONALIZADAS */
+#s-p {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: justify;
+  padding: 110px;
+  background-color: var(--segundo);
+  color: var(--tercero);
+}
+
+#s-p div {
+  opacity: 0;
+}
+
+/* ESTILOS PARA LA PAGINA SOLUCIONES APARTADO DE OPTIMIZACION DE PROCESOS */
+#s-op {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  text-align: justify;
+  padding: 110px;
+  color: var(--primero);
+}
+
+#s-op div {
+  opacity: 0;
+}
+
+/* ESTILOS PARA LA PAGINA SOLUCIONES APARTADO DE SEGURIDAD Y CONFIABILIDAD */
+#s-sc {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: justify;
+  padding: 110px;
+  background-color: var(--segundo);
+  color: var(--tercero);
+}
+
+#s-sc div {
+  opacity: 0;
+}
+
+/* ESTILOS PARA LA PAGINA SOLUCIONES APARTADO DE EXPERIENCIA DEL USUARIO */
+#s-eu {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  text-align: justify;
+  padding: 110px;
+  color: var(--primero);
+}
+
+#s-eu div {
+  opacity: 0;
+}
+
+/* ESTILOS PARA LA PAGINA SOLUCIONES APARTADO DE ANALISIS E INTELIGENCIA DE NEGOCIOS */
+#s-ai {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: justify;
+  padding: 110px;
+  background-color: var(--segundo);
+  color: var(--tercero);
+}
+
+#s-ai div {
+  opacity: 0;
+}
+
+/* ESTILOS PARA LA PAGINA SOLUCIONES APARTADO DE SOPORTE CONTINUO */
+#s-c {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  text-align: justify;
+  padding: 110px;
+  color: var(--primero);
+}
+
+#s-c div {
+  opacity: 0;
+}
+
+/* ESTILOS PARA LA PAGINA DE RECURSOS */
+/* ESTILOS PARA LA PAGINA SOLUCIONES APARTADO DE INICIO */
+#r-inicio {
+  text-align: justify;
+  padding: 110px;
+  color: var(--primero);
+}
+
+#r-inicio div {
+  opacity: 0;
+}
+
+/* ESTILOS PARA LA PAGINA SOLUCIONES APARTADO DE SOLUCIONES PERSONALIZADAS */
+#r-gt {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: justify;
+  padding: 110px;
+  background-color: var(--segundo);
+  color: var(--tercero);
+}
+
+#r-gt div {
+  opacity: 0;
+}
+
+/* ESTILOS PARA LA PAGINA SOLUCIONES APARTADO DE OPTIMIZACION DE PROCESOS */
+#r-h {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  text-align: justify;
+  padding: 110px;
+  color: var(--primero);
+}
+
+#r-h div {
+  opacity: 0;
+}
+
+/* ESTILOS PARA LA PAGINA SOLUCIONES APARTADO DE SEGURIDAD Y CONFIABILIDAD */
+#r-faq {
+  display: flex;
+  justify-content: start;
+  text-align: justify;
+  padding: 110px;
+  background-color: var(--segundo);
+  color: var(--tercero);
+}
+
+#r-faq div {
+  opacity: 0;
+}
+
+/* ESTILOS PARA LA PAGINA SOLUCIONES APARTADO DE EXPERIENCIA DEL USUARIO */
+#r-cont {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  text-align: justify;
+  padding: 110px;
+  color: var(--primero);
+}
+
+#r-cont div {
+  opacity: 0;
+}
+
+/* ESTILOS PARA LA PAGINA SOLUCIONES APARTADO DE ANALISIS E INTELIGENCIA DE NEGOCIOS */
+#s-ai {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: justify;
+  padding: 110px;
+  background-color: var(--segundo);
+  color: var(--tercero);
+}
+
+#s-ai div {
+  opacity: 0;
+}
+
+/* ESTILOS PARA LA PAGINA SOLUCIONES APARTADO DE SOPORTE CONTINUO */
+#s-c {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  text-align: justify;
+  padding: 110px;
+  color: var(--primero);
+}
+
+#s-c div {
   opacity: 0;
 }
 
@@ -649,11 +847,10 @@ footer div {
 }
 @media (width < 1024px) {
   /* ESTILOS PARA LA PAGINA DE SOBRE NOSOTROS */
-  #sn-intro {
-    flex-direction: column-reverse;
-    padding: 20px;
-  }
-  #sn-valores {
+  #sn-intro,
+  #sn-valores,
+  #sn-equipo,
+  #sn-oferta {
     flex-direction: column-reverse;
     padding: 20px;
   }
@@ -664,15 +861,6 @@ footer div {
   #valores div {
     width: auto;
   }
-  #sn-equipo {
-    flex-direction: column-reverse;
-    padding: 20px;
-    margin: 0;
-  }
-  #sn-oferta {
-    flex-direction: column-reverse;
-    padding: 20px;
-  }
   #sn-conecta {
     margin: 0;
     padding: 20px;
@@ -682,39 +870,20 @@ footer div {
     text-align: left;
   }
   #sn-intro img,
-  #sn-valores img,
-  #sn-equipo img,
-  #sn-oferta img {
-    margin: 0 auto;
-  }
-  #sn-intro img,
-  #sn-equipo img,
-  #sn-oferta img {
+  #sn-equipo img {
     width: 250px;
     height: 170px;
+    margin: 0 auto;
   }
   #sn-valores img,
   #sn-oferta img {
     display: none;
   }
   /* ESTILOS PARA LA PAGINA DE SERVICIOS */
-  #s-intro {
-    flex-direction: column-reverse;
-    padding: 20px;
-  }
-  #s-dw {
-    flex-direction: column-reverse;
-    padding: 20px;
-  }
-  #s-cw {
-    flex-direction: column-reverse;
-    padding: 20px;
-    margin: 0;
-  }
-  #s-pw {
-    flex-direction: column-reverse;
-    padding: 20px;
-  }
+  #s-intro,
+  #s-dw,
+  #s-cw,
+  #s-pw,
   #s-mw {
     flex-direction: column-reverse;
     padding: 20px;
@@ -724,13 +893,28 @@ footer div {
   #s-pw img,
   #s-mw img {
     margin: 0 auto;
-  }
-  #s-dw img,
-  #s-cw img,
-  #s-pw img,
-  #s-mw img {
     width: 250px;
     height: 170px;
+  }
+  /* ESTILOS PARA LA PAGINA DE SERVICIOS */
+  #s-inicio,
+  #s-p,
+  #s-op,
+  #s-sc,
+  #s-eu,
+  #s-ai,
+  #s-c {
+    flex-direction: column-reverse;
+    padding: 20px;
+  }
+  /* ESTILOS PARA LA PAGINA DE SERVICIOS */
+  #r-inicio,
+  #r-gt,
+  #r-h,
+  #r-faq,
+  #r-cont {
+    flex-direction: column-reverse;
+    padding: 20px;
   }
 }
 /* ESTILOS RESPONSIVOS PARA MOVIL */
