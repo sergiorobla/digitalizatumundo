@@ -284,7 +284,7 @@ main {
 }
 
 /* ANIMACIONES PARA LA PAGINA DEL INDEX */
-@keyframes slideInFromBottom {
+@keyframes slideInFromLeft {
   from {
     transform: translateX(-100%);
     opacity: 0;
@@ -294,8 +294,8 @@ main {
     opacity: 1;
   }
 }
-.slide-in-bottom {
-  animation: slideInFromBottom 1.5s ease-out forwards;
+.slide-in-left {
+  animation: slideInFromLeft 1.5s ease-out forwards;
 }
 
 /* ESTILOS PARA LA PAGINA DE SOBRE NOSOTROS */
@@ -341,10 +341,7 @@ main {
   opacity: 0;
 }
 
-#sn-valores div h1,
-#sn-valores div p,
-#valores div h3,
-#valores div p {
+#sn-valores div h1 {
   opacity: 0;
 }
 
@@ -352,6 +349,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  opacity: 0;
 }
 
 #valores div {
@@ -436,6 +434,119 @@ main {
   transform: scale(1.1);
 }
 
+/* ESTILOS PARA LA PAGINA DE SERVICIOS */
+/* ESTILOS PARA LA PAGINA SERVICIOS APARTADO DE NUESTROS SERVICIOS */
+#Paginaservicios ul {
+  text-align: left;
+}
+
+#s-intro {
+  text-align: justify;
+  padding: 110px;
+  color: var(--primero);
+}
+
+#s-intro h1 {
+  margin: 0;
+  opacity: 0;
+}
+
+#s-intro p {
+  opacity: 0;
+}
+
+/* ESTILOS PARA LA PAGINA SERVICIOS APARTADO DE DESARROLLO WEB */
+#s-dw {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: justify;
+  padding: 110px;
+  background-color: var(--segundo);
+  color: var(--tercero);
+}
+
+#s-dw img {
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px black;
+  margin-right: 50px;
+  opacity: 0;
+}
+
+#s-dw div {
+  opacity: 0;
+}
+
+/* ESTILOS PARA LA PAGINA SERVICIOS APARTADO DE CONSULTORIA WEB */
+#s-cw {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  text-align: justify;
+  padding: 110px;
+  color: var(--primero);
+}
+
+#s-cw img {
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  margin-left: 50px;
+  box-shadow: 1px 1px 20px black;
+  opacity: 0;
+}
+
+#s-cw div {
+  opacity: 0;
+}
+
+/* ESTILOS PARA LA PAGINA SERVICIOS APARTADO DE PLANIFICACION WEB */
+#s-pw {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: justify;
+  padding: 110px;
+  background-color: var(--segundo);
+  color: var(--tercero);
+}
+
+#s-pw img {
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px black;
+  margin-right: 50px;
+  opacity: 0;
+}
+
+#s-pw div {
+  opacity: 0;
+}
+
+/* ESTILOS PARA LA PAGINA SERVICIOS APARTADO DE MANTENIMIENTO WEB */
+#s-mw {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  text-align: justify;
+  padding: 110px;
+  color: var(--primero);
+}
+
+#s-mw img {
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  margin-left: 50px;
+  box-shadow: 1px 1px 20px black;
+  opacity: 0;
+}
+
+#s-mw div {
+  opacity: 0;
+}
+
 /* ESTILOS PARA LA PAGINA DE CONTACTO */
 #contacta {
   padding: 20px;
@@ -502,15 +613,6 @@ main {
   transform: scale(1.1);
 }
 
-/* ESTILOS PARA LA PAGINA DE SERVICIOS */
-#Paginaservicios {
-  padding: 20px;
-}
-
-#Paginaservicios h1 {
-  margin: 0;
-}
-
 /* ESTILOS PARA EL PIE DE PAGINA */
 footer {
   background-color: var(--primero);
@@ -546,6 +648,7 @@ footer div {
   }
 }
 @media (width < 1024px) {
+  /* ESTILOS PARA LA PAGINA DE SOBRE NOSOTROS */
   #sn-intro {
     flex-direction: column-reverse;
     padding: 20px;
@@ -593,6 +696,41 @@ footer div {
   #sn-valores img,
   #sn-oferta img {
     display: none;
+  }
+  /* ESTILOS PARA LA PAGINA DE SERVICIOS */
+  #s-intro {
+    flex-direction: column-reverse;
+    padding: 20px;
+  }
+  #s-dw {
+    flex-direction: column-reverse;
+    padding: 20px;
+  }
+  #s-cw {
+    flex-direction: column-reverse;
+    padding: 20px;
+    margin: 0;
+  }
+  #s-pw {
+    flex-direction: column-reverse;
+    padding: 20px;
+  }
+  #s-mw {
+    flex-direction: column-reverse;
+    padding: 20px;
+  }
+  #s-dw img,
+  #s-cw img,
+  #s-pw img,
+  #s-mw img {
+    margin: 0 auto;
+  }
+  #s-dw img,
+  #s-cw img,
+  #s-pw img,
+  #s-mw img {
+    width: 250px;
+    height: 170px;
   }
 }
 /* ESTILOS RESPONSIVOS PARA MOVIL */
