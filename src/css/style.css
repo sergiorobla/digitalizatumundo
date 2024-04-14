@@ -18,6 +18,35 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+/* ANIMACIONES PARA EL DOCUMENTO */
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.slide-in-left {
+  animation: slideInFromLeft 1.5s ease-out forwards;
+}
+
+.slide-in-top {
+  animation: slideInFromTop 1.5s ease-in-out forwards;
+}
+
 /* ESTILOS DEL BOTON RESPONSIVE */
 .bars_menu {
   display: none;
@@ -222,8 +251,8 @@ main {
 }
 
 #first-introduction img {
-  width: 15vw;
-  min-width: 250px;
+  width: 25vw;
+  min-width: 450px;
   box-shadow: 1px 1px 20px black;
   border-radius: 20px;
   margin-bottom: 20px;
@@ -283,21 +312,6 @@ main {
   margin-bottom: -5px;
 }
 
-/* ANIMACIONES PARA LA PAGINA DEL INDEX */
-@keyframes slideInFromLeft {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-.slide-in-left {
-  animation: slideInFromLeft 1.5s ease-out forwards;
-}
-
 /* ESTILOS PARA LA PAGINA DE SOBRE NOSOTROS */
 /* ESTILOS PARA LA PAGINA DE SOBRE NOSOTROS PARTE INTRODUCTORIA */
 #sn-intro {
@@ -343,6 +357,10 @@ main {
 }
 
 #sn-valores div h1 {
+  opacity: 0;
+}
+
+#parrafo-in-val {
   opacity: 0;
 }
 
@@ -846,6 +864,9 @@ footer div {
   }
 }
 @media (width < 1024px) {
+  #first-introduction img {
+    min-width: 350px;
+  }
   /* ESTILOS PARA LA PAGINA DE SOBRE NOSOTROS */
   #sn-intro,
   #sn-valores,
@@ -959,6 +980,7 @@ footer div {
     text-align: center;
   }
   #first-introduction img {
+    min-width: 300px;
     margin: 50px 0;
   }
   #first-introduction div {

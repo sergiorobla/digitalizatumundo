@@ -4,86 +4,145 @@ document.addEventListener("DOMContentLoaded", () => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 const target = entry.target;
-                // Añade la clase 'slide-in-left' a todos los elementos dentro de #servicios
+                // Añade la clase 'slide-in-left' y 'slide-in-top' en cada una de las clases
+                // Pagina del index
+                // Clase de 'heading-title' del index
                 if (target.closest("#heading-title")) {
+                    target.classList.add("slide-in-top");
+                }
+                // Clase de 'first-introduction' del index
+                else if (target.closest("#first-introduction div")) {
                     target.classList.add("slide-in-left");
                 }
-                else if (target.closest("#first-introduction")) {
+                else if (target.closest("#img-intro")) {
+                    target.classList.add("slide-in-top");
+                }
+                // Clase de 'servicios' del index
+                else if (target.closest("#servicios div")) {
                     target.classList.add("slide-in-left");
                 }
-                else if (target.closest("#servicios")) {
+                // Pagina de sobre nosotros
+                // Clase de 'sn-intro' de sobre nosotros
+                else if (target.closest("#sn-intro div")) {
                     target.classList.add("slide-in-left");
                 }
-                else if (target.closest("#sn-intro")) {
+                else if (target.closest("#sn-intro img")) {
+                    target.classList.add("slide-in-top");
+                }
+                // Clase de 'sn-valores' de sobre nosotros
+                else if (target.closest("#sn-valores div")) {
                     target.classList.add("slide-in-left");
                 }
-                else if (target.closest("#sn-valores")) {
+                else if (target.closest("#valores div")) {
+                    target.classList.add("slide-in-top");
+                }
+                else if (target.closest("#sn-valores img")) {
+                    target.classList.add("slide-in-top");
+                }
+                // Clase de 'sn-equipo' de sobre nosotros
+                else if (target.closest("#sn-equipo div")) {
                     target.classList.add("slide-in-left");
                 }
-                else if (target.closest("#valores")) {
+                else if (target.closest("#sn-equipo img")) {
+                    target.classList.add("slide-in-top");
+                }
+                // Clase de 'sn-oferta' de sobre nosotros
+                else if (target.closest("#sn-oferta div")) {
                     target.classList.add("slide-in-left");
                 }
-                else if (target.closest("#sn-equipo")) {
-                    target.classList.add("slide-in-left");
+                else if (target.closest("#sn-oferta img")) {
+                    target.classList.add("slide-in-top");
                 }
-                else if (target.closest("#sn-oferta")) {
-                    target.classList.add("slide-in-left");
-                }
+                // Clase de 'sn-conecta' de sobre nosotros
                 else if (target.closest("#sn-conecta")) {
                     target.classList.add("slide-in-left");
                 }
-                else if (target.closest("#contacta")) {
-                    target.classList.add("slide-in-left");
-                }
+                // Pagina de servicios
+                // Clase de 's-intro' de servicios
                 else if (target.closest("#s-intro")) {
                     target.classList.add("slide-in-left");
                 }
-                else if (target.closest("#s-dw")) {
+                // Clase de 's-dw' de servicios
+                else if (target.closest("#s-dw div")) {
                     target.classList.add("slide-in-left");
                 }
-                else if (target.closest("#s-cw")) {
+                else if (target.closest("#s-dw img")) {
+                    target.classList.add("slide-in-top");
+                }
+                // Clase de 's-cw' de servicios
+                else if (target.closest("#s-cw div")) {
                     target.classList.add("slide-in-left");
                 }
-                else if (target.closest("#s-pw")) {
+                else if (target.closest("#s-cw img")) {
+                    target.classList.add("slide-in-top");
+                }
+                // Clase de 's-pw' de servicios
+                else if (target.closest("#s-pw div")) {
                     target.classList.add("slide-in-left");
                 }
-                else if (target.closest("#s-mw")) {
+                else if (target.closest("#s-pw img")) {
+                    target.classList.add("slide-in-top");
+                }
+                // Clase de 's-mw' de servicios
+                else if (target.closest("#s-mw div")) {
                     target.classList.add("slide-in-left");
                 }
+                else if (target.closest("#s-mw img")) {
+                    target.classList.add("slide-in-top");
+                }
+                // Pagina de soluciones
+                // Clase de 's-inicio' de soluciones
                 else if (target.closest("#s-inicio")) {
                     target.classList.add("slide-in-left");
                 }
+                // Clase de 's-p' de soluciones
                 else if (target.closest("#s-p")) {
                     target.classList.add("slide-in-left");
                 }
+                // Clase de 's-op' de soluciones
                 else if (target.closest("#s-op")) {
                     target.classList.add("slide-in-left");
                 }
+                // Clase de 's-sc' de soluciones
                 else if (target.closest("#s-sc")) {
                     target.classList.add("slide-in-left");
                 }
+                // Clase de 's-eu' de soluciones
                 else if (target.closest("#s-eu")) {
                     target.classList.add("slide-in-left");
                 }
+                // Clase de 's-ai' de soluciones
                 else if (target.closest("#s-ai")) {
                     target.classList.add("slide-in-left");
                 }
+                // Clase de 's-c' de soluciones
                 else if (target.closest("#s-c")) {
                     target.classList.add("slide-in-left");
                 }
+                // Pagina de recursos
+                // Clase de 'r-inicio' de recursos
                 else if (target.closest("#r-inicio")) {
                     target.classList.add("slide-in-left");
                 }
+                // Clase de 'r-gt' de recursos
                 else if (target.closest("#r-gt")) {
                     target.classList.add("slide-in-left");
                 }
+                // Clase de 'r-h' de recursos
                 else if (target.closest("#r-h")) {
                     target.classList.add("slide-in-left");
                 }
+                // Clase de 'r-faq' de recursos
                 else if (target.closest("#r-faq")) {
                     target.classList.add("slide-in-left");
                 }
+                // Clase de 'r-cont' de recursos
                 else if (target.closest("#r-cont")) {
+                    target.classList.add("slide-in-left");
+                }
+                // Pagina de contacta
+                // Clase de 'contacta' de contacta
+                else if (target.closest("#contacta")) {
                     target.classList.add("slide-in-left");
                 }
                 observer.unobserve(target);
@@ -95,15 +154,21 @@ document.addEventListener("DOMContentLoaded", () => {
         observer.observe(el);
     });
     // Observa todos los elementos dentro de #first-introduction
-    document.querySelectorAll("#first-introduction > *").forEach((el) => {
+    document.querySelectorAll("#first-introduction > div").forEach((el) => {
+        observer.observe(el);
+    });
+    document.querySelectorAll("#first-introduction > img").forEach((el) => {
         observer.observe(el);
     });
     // Observa todos los elementos dentro de #servicios
-    document.querySelectorAll("#servicios > *").forEach((el) => {
+    document.querySelectorAll("#servicios > div").forEach((el) => {
         observer.observe(el);
     });
     // Observa todos los elementos dentro de #sn-intro
-    document.querySelectorAll("#sn-intro > *").forEach((el) => {
+    document.querySelectorAll("#sn-intro > div").forEach((el) => {
+        observer.observe(el);
+    });
+    document.querySelectorAll("#sn-intro > img").forEach((el) => {
         observer.observe(el);
     });
     // Observa todos los elementos dentro de #sn-valores
