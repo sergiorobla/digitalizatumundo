@@ -92,53 +92,89 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
                 // Pagina de soluciones
                 // Clase de 's-inicio' de soluciones
-                else if (target.closest("#s-inicio")) {
+                else if (target.closest("#s-inicio div")) {
                     target.classList.add("slide-in-left");
+                }
+                else if (target.closest("#s-inicio img")) {
+                    target.classList.add("slide-in-top");
                 }
                 // Clase de 's-p' de soluciones
-                else if (target.closest("#s-p")) {
+                else if (target.closest("#s-p div")) {
                     target.classList.add("slide-in-left");
+                }
+                else if (target.closest("#s-p img")) {
+                    target.classList.add("slide-in-top");
                 }
                 // Clase de 's-op' de soluciones
-                else if (target.closest("#s-op")) {
+                else if (target.closest("#s-op div")) {
                     target.classList.add("slide-in-left");
+                }
+                else if (target.closest("#s-op img")) {
+                    target.classList.add("slide-in-top");
                 }
                 // Clase de 's-sc' de soluciones
-                else if (target.closest("#s-sc")) {
+                else if (target.closest("#s-sc div")) {
                     target.classList.add("slide-in-left");
+                }
+                else if (target.closest("#s-sc img")) {
+                    target.classList.add("slide-in-top");
                 }
                 // Clase de 's-eu' de soluciones
-                else if (target.closest("#s-eu")) {
+                else if (target.closest("#s-eu div")) {
                     target.classList.add("slide-in-left");
+                }
+                else if (target.closest("#s-eu img")) {
+                    target.classList.add("slide-in-top");
                 }
                 // Clase de 's-ai' de soluciones
-                else if (target.closest("#s-ai")) {
+                else if (target.closest("#s-ai div")) {
                     target.classList.add("slide-in-left");
                 }
+                else if (target.closest("#s-ai img")) {
+                    target.classList.add("slide-in-top");
+                }
                 // Clase de 's-c' de soluciones
-                else if (target.closest("#s-c")) {
+                else if (target.closest("#s-c div")) {
                     target.classList.add("slide-in-left");
+                }
+                else if (target.closest("#s-c img")) {
+                    target.classList.add("slide-in-top");
                 }
                 // Pagina de recursos
                 // Clase de 'r-inicio' de recursos
-                else if (target.closest("#r-inicio")) {
+                else if (target.closest("#r-inicio div")) {
                     target.classList.add("slide-in-left");
+                }
+                else if (target.closest("#r-inicio img")) {
+                    target.classList.add("slide-in-top");
                 }
                 // Clase de 'r-gt' de recursos
-                else if (target.closest("#r-gt")) {
+                else if (target.closest("#r-gt div")) {
                     target.classList.add("slide-in-left");
+                }
+                else if (target.closest("#r-gt img")) {
+                    target.classList.add("slide-in-top");
                 }
                 // Clase de 'r-h' de recursos
-                else if (target.closest("#r-h")) {
+                else if (target.closest("#r-h div")) {
                     target.classList.add("slide-in-left");
+                }
+                else if (target.closest("#r-h img")) {
+                    target.classList.add("slide-in-top");
                 }
                 // Clase de 'r-faq' de recursos
-                else if (target.closest("#r-faq")) {
+                else if (target.closest("#r-faq div")) {
                     target.classList.add("slide-in-left");
                 }
+                else if (target.closest("#r-faq img")) {
+                    target.classList.add("slide-in-top");
+                }
                 // Clase de 'r-cont' de recursos
-                else if (target.closest("#r-cont")) {
+                else if (target.closest("#r-cont div")) {
                     target.classList.add("slide-in-left");
+                }
+                else if (target.closest("#r-cont img")) {
+                    target.classList.add("slide-in-top");
                 }
                 // Pagina de contacta
                 // Clase de 'contacta' de contacta
@@ -154,10 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
         observer.observe(el);
     });
     // Observa todos los elementos dentro de #first-introduction
-    document.querySelectorAll("#first-introduction > div").forEach((el) => {
-        observer.observe(el);
-    });
-    document.querySelectorAll("#first-introduction > img").forEach((el) => {
+    document.querySelectorAll("#first-introduction > *").forEach((el) => {
         observer.observe(el);
     });
     // Observa todos los elementos dentro de #servicios
@@ -165,23 +198,14 @@ document.addEventListener("DOMContentLoaded", () => {
         observer.observe(el);
     });
     // Observa todos los elementos dentro de #sn-intro
-    document.querySelectorAll("#sn-intro > div").forEach((el) => {
-        observer.observe(el);
-    });
-    document.querySelectorAll("#sn-intro > img").forEach((el) => {
+    document.querySelectorAll("#sn-intro > *").forEach((el) => {
         observer.observe(el);
     });
     // Observa todos los elementos dentro de #sn-valores
     document.querySelectorAll("#sn-valores > img").forEach((el) => {
         observer.observe(el);
     });
-    document.querySelectorAll("#sn-valores > div > h1").forEach((el) => {
-        observer.observe(el);
-    });
-    document.querySelectorAll("#sn-valores > div > p").forEach((el) => {
-        observer.observe(el);
-    });
-    document.querySelectorAll("#sn-valores > div > #valores").forEach((el) => {
+    document.querySelectorAll("#sn-valores > div > *").forEach((el) => {
         observer.observe(el);
     });
     // Observa todos los elementos dentro de #sn-equipo

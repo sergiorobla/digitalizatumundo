@@ -348,8 +348,9 @@ main {
 }
 
 #sn-valores img {
-  width: 300px;
-  height: 300px;
+  width: 20vw;
+  min-width: 150px;
+  height: 190px;
   border-radius: 10px;
   box-shadow: 1px 1px 20px black;
   margin-left: 50px;
@@ -574,9 +575,23 @@ main {
 /* ESTILOS PARA LA PAGINA DE SOLUCIONES */
 /* ESTILOS PARA LA PAGINA SOLUCIONES APARTADO DE INICIO */
 #s-inicio {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
   text-align: justify;
   padding: 110px;
   color: var(--primero);
+}
+
+#s-inicio img {
+  width: 25vw;
+  min-width: 450px;
+  height: 250px;
+  border-radius: 10px;
+  margin-left: 50px;
+  box-shadow: 1px 1px 20px black;
+  opacity: 0;
 }
 
 #s-inicio div {
@@ -587,10 +602,21 @@ main {
 #s-p {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   text-align: justify;
   padding: 110px;
   background-color: var(--segundo);
   color: var(--tercero);
+}
+
+#s-p img {
+  width: 25vw;
+  min-width: 450px;
+  height: 250px;
+  border-radius: 10px;
+  margin-right: 50px;
+  box-shadow: 1px 1px 20px black;
+  opacity: 0;
 }
 
 #s-p div {
@@ -602,9 +628,20 @@ main {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
+  align-items: center;
   text-align: justify;
   padding: 110px;
   color: var(--primero);
+}
+
+#s-op img {
+  width: 25vw;
+  min-width: 450px;
+  height: 250px;
+  border-radius: 10px;
+  margin-left: 50px;
+  box-shadow: 1px 1px 20px black;
+  opacity: 0;
 }
 
 #s-op div {
@@ -616,9 +653,20 @@ main {
   display: flex;
   justify-content: space-evenly;
   text-align: justify;
+  align-items: center;
   padding: 110px;
   background-color: var(--segundo);
   color: var(--tercero);
+}
+
+#s-sc img {
+  width: 25vw;
+  min-width: 450px;
+  height: 250px;
+  border-radius: 10px;
+  margin-right: 50px;
+  box-shadow: 1px 1px 20px black;
+  opacity: 0;
 }
 
 #s-sc div {
@@ -630,9 +678,20 @@ main {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
+  align-items: center;
   text-align: justify;
   padding: 110px;
   color: var(--primero);
+}
+
+#s-eu img {
+  width: 25vw;
+  min-width: 450px;
+  height: 250px;
+  border-radius: 10px;
+  margin-left: 50px;
+  box-shadow: 1px 1px 20px black;
+  opacity: 0;
 }
 
 #s-eu div {
@@ -644,9 +703,20 @@ main {
   display: flex;
   justify-content: space-evenly;
   text-align: justify;
+  align-items: center;
   padding: 110px;
   background-color: var(--segundo);
   color: var(--tercero);
+}
+
+#s-ai img {
+  width: 25vw;
+  min-width: 450px;
+  height: 250px;
+  border-radius: 10px;
+  margin-right: 50px;
+  box-shadow: 1px 1px 20px black;
+  opacity: 0;
 }
 
 #s-ai div {
@@ -658,9 +728,20 @@ main {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
+  align-items: center;
   text-align: justify;
   padding: 110px;
   color: var(--primero);
+}
+
+#s-c img {
+  width: 25vw;
+  min-width: 450px;
+  height: 250px;
+  border-radius: 10px;
+  margin-left: 50px;
+  box-shadow: 1px 1px 20px black;
+  opacity: 0;
 }
 
 #s-c div {
@@ -670,9 +751,23 @@ main {
 /* ESTILOS PARA LA PAGINA DE RECURSOS */
 /* ESTILOS PARA LA PAGINA SOLUCIONES APARTADO DE INICIO */
 #r-inicio {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
   text-align: justify;
   padding: 110px;
   color: var(--primero);
+}
+
+#r-inicio img {
+  width: 25vw;
+  min-width: 450px;
+  height: 250px;
+  border-radius: 10px;
+  margin-left: 50px;
+  box-shadow: 1px 1px 20px black;
+  opacity: 0;
 }
 
 #r-inicio div {
@@ -683,10 +778,21 @@ main {
 #r-gt {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   text-align: justify;
   padding: 110px;
   background-color: var(--segundo);
   color: var(--tercero);
+}
+
+#r-gt img {
+  width: 25vw;
+  min-width: 450px;
+  height: 250px;
+  border-radius: 10px;
+  margin-right: 50px;
+  box-shadow: 1px 1px 20px black;
+  opacity: 0;
 }
 
 #r-gt div {
@@ -698,9 +804,20 @@ main {
   display: flex;
   flex-direction: row-reverse;
   justify-content: start;
+  align-items: center;
   text-align: justify;
   padding: 110px;
   color: var(--primero);
+}
+
+#r-h img {
+  width: 25vw;
+  min-width: 450px;
+  height: 250px;
+  border-radius: 10px;
+  margin-left: 50px;
+  box-shadow: 1px 1px 20px black;
+  opacity: 0;
 }
 
 #r-h div {
@@ -712,9 +829,20 @@ main {
   display: flex;
   justify-content: start;
   text-align: justify;
+  align-items: center;
   padding: 110px;
   background-color: var(--segundo);
   color: var(--tercero);
+}
+
+#r-faq img {
+  width: 25vw;
+  min-width: 450px;
+  height: 250px;
+  border-radius: 10px;
+  margin-right: 50px;
+  box-shadow: 1px 1px 20px black;
+  opacity: 0;
 }
 
 #r-faq div {
@@ -727,8 +855,19 @@ main {
   flex-direction: row-reverse;
   justify-content: start;
   text-align: justify;
+  align-items: center;
   padding: 110px;
   color: var(--primero);
+}
+
+#r-cont img {
+  width: 25vw;
+  min-width: 450px;
+  height: 250px;
+  border-radius: 10px;
+  margin-left: 50px;
+  box-shadow: 1px 1px 20px black;
+  opacity: 0;
 }
 
 #r-cont div {
@@ -864,8 +1003,21 @@ footer div {
   }
 }
 @media (width < 1024px) {
-  #first-introduction img {
+  #first-introduction img,
+  #s-inicio img,
+  #s-p img,
+  #s-op img,
+  #s-sc img,
+  #s-eu img,
+  #s-ai img,
+  #s-c img,
+  #r-inicio img,
+  #r-gt img,
+  #r-h img,
+  #r-faq img,
+  #r-cont img {
     min-width: 350px;
+    height: 200px;
   }
   /* ESTILOS PARA LA PAGINA DE SOBRE NOSOTROS */
   #sn-intro,
@@ -979,7 +1131,19 @@ footer div {
     padding: 0 20px;
     text-align: center;
   }
-  #first-introduction img {
+  #first-introduction img,
+  #s-inicio img,
+  #s-p img,
+  #s-op img,
+  #s-sc img,
+  #s-eu img,
+  #s-ai img,
+  #s-c img,
+  #r-inicio img,
+  #r-gt img,
+  #r-h img,
+  #r-faq img,
+  #r-cont img {
     min-width: 300px;
     margin: 50px 0;
   }
